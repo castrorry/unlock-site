@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav.navbar {
+    padding: 1em !important;
+    border-bottom: 1px solid rgb(234, 234, 234);
+}
+
+nav.navbar a.navbar-brand {
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav.navbar button.navbar-toggler {
+    padding: .25rem .50rem;
+    font-size: 90%;
+}
+
+nav.navbar ul.navbar-nav {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+nav.navbar div a.btn{
+    font-size: 90%;
+    padding: .4em 1.2em;
+}
