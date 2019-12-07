@@ -25,3 +25,19 @@ nav.navbar div a.btn{
     font-size: 90%;
     padding: .4em 1.2em;
 }
+
+section.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section div.pannel {
+    width: 100%;
+    max-width: 500px;
+}
+
+section div.pannel ul li div.dl-info {
+    display: flex;
+    flex-direction: column;
+}
