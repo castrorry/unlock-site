@@ -4,11 +4,21 @@ body {
 
 nav.navbar {
     padding: 1em !important;
+
+
     border-bottom: 1px solid rgb(234, 234, 234);
 }
 
 nav.navbar a.navbar-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Roboto Mono', monospace;
+}
+
+nav.navbar a.navbar-brand img {
+    width: 30px;
+    height: 30px;
 }
 
 nav.navbar button.navbar-toggler {
