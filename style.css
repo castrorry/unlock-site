@@ -13,7 +13,6 @@ nav.navbar a.navbar-brand {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto Mono', monospace;
 }
 
 nav.navbar a.navbar-brand img {
@@ -37,8 +36,18 @@ nav.navbar div a.btn{
 
 section.container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+section.container h2{
+    font-weight: 900;
+}
+
+section.container p{
+    max-width: 640px;
+    font-weight: 700;
 }
 
 section div.pannel {
