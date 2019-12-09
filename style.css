@@ -25,6 +25,7 @@ section#dl {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: left;
 }
 
 nav.navbar {
@@ -95,9 +96,18 @@ div.main-footer a i {
     font-size: 2rem;
 }
 
+div.main-footer a:hover {
+    text-decoration: none;
+
+}
+
 section#dl div.pannel {
     width: 100%;
     max-width: 540px;
+}
+
+section#dl div h2 {
+    font-weight: 700;
 }
 
 section#dl div.pannel ul li div.dl-info {
