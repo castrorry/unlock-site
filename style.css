@@ -11,25 +11,9 @@ body {
     max-width: 1040px;
 }
 
-section#main {
-    width: 100%;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-section#dl {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-}
-
 nav.navbar {
     padding: 1em !important;
+    margin-bottom: 3rem;
 }
 
 nav.navbar a.navbar-brand {
@@ -65,12 +49,12 @@ div.main {
     text-align: center;
 }
 
-div.main img{
+div.main img {
     width: 4rem;
     margin-bottom: 2em;
 }
 
-div.main p{
+div.main p {
     max-width: 640px;
 }
 
@@ -85,32 +69,36 @@ div.main a.tg-link i {
     margin-left: .4rem;
 }
 
-div.main-footer, div.main-footer a {
+div.main a.dl-link {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 3rem;
 }
 
-div.main-footer a i {
-    margin-top: .5rem;
+div.main a.dl-link i {
+    margin-top: .2rem;
     font-size: 2rem;
 }
 
-div.main-footer a:hover {
+div.main a.dl-link:hover {
     text-decoration: none;
 
 }
 
-section#dl div.pannel {
+section#downloads {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+section#downloads div.pannel {
     width: 100%;
     max-width: 540px;
 }
 
-section#dl div h2 {
-    font-weight: 700;
-}
-
-section#dl div.pannel ul li div.dl-info {
+section#downloads div.pannel ul li div.dl-info {
     display: flex;
     flex-direction: column;
 }

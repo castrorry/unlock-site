@@ -14,65 +14,45 @@
 </head>
 
 <body>
-    <section id="main">
+    <header id="home" class="container">
+
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <div class="container">
-                <a class="navbar-brand" href="#main">
-                    <img src="un.svg" alt="">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto text-left pr-2">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Docs</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#dl">Downloads</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Comunidade</a>
-                        </li>
-                    </ul>
-                    <a href="#" class="btn btn-dark btn-sm">GitHub</a>
-                </div>
+            <a class="navbar-brand" href="#main">
+                <img src="/unlock@brand.svg" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto text-left pr-2">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comunidade</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-dark btn-sm">GitHub</a>
             </div>
         </nav>
 
+        <div class="main">
+            <img src="/unlock@logo.svg" alt="Unlock FRP">
 
-        <div class="container main">
-            <img src="unlock@logo.svg" alt="">
+            <p>Obtenha ferramentas para desbloqueios FRP via <code>bypass</code>. Duvidas? Consulte nossa <a href="http://">documentação</a> ou junte-se a comunidade Firmwares no Discord:</p>
+    
+            <a href=" #" class="btn btn-primary tg-link">Discord <i class="material-icons">launch</i></a>
 
-            <p>Projeto criado para facilitar o uso de técnicas de desbloqueios como: <a href="http://"">bypass</a> e <code>Manobra de software</code>, em smartphones. Junte-se a nossa comunidade no Telegram:</p>
-
-            <a href=" #" class="btn btn-primary tg-link">Telegram <i class="material-icons">launch</i></a>
-
+                <a class="dl-link text-dark" href="#downloads">
+                    <span>Downloads</span>
+                    <i class="material-icons">expand_more</i>
+                </a>
         </div>
 
-        <div class="main-footer">
-            <a class="text-dark" href="#dl">
-                <span>Mais</span>
-                <i class="material-icons">expand_more</i>
-            </a>
-        </div>
+    </header>
 
-    </section>
-
-
-    <section id="dl" class="container text-left pt-5">
-
-        <div class="mb-2">
-
-            <h2>Downloads</h2>
-
-            <p>
-                Confira abaixo algumas ferramentas para desbloqueios FRP e outros, caso precise de ajuda, consulte nossa
-                <a href="http://">documentação</a>.
-            </p>
-
-        </div>
+    <section id="downloads"  class="container pt-2">
 
         <div class="pannel">
             <ul class="list-group">
@@ -106,8 +86,8 @@
                 </li>
             </ul>
         </div>
-    </section>
 
+    </section>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
