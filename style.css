@@ -103,3 +103,13 @@ section#downloads div.pannel ul li i {
     margin-left: .3rem;
     cursor: pointer;
 }
+
+@media (max-width: 350px) {
+    section#downloads div.pannel ul li {
+        font-size: 90%;
+    }
+
+    section#downloads div.pannel ul li i {
+        font-size: 90%;
+    }
+}
