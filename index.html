@@ -27,67 +27,78 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto text-left pr-2">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Docs</a>
+                        <a class="nav-link disabled" href="#docs">Docs</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Comunidade</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Comunidade
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="https://t.me/firmwares_bot" target="_blank">Telegram</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item disabled" href="#">Discord (Em breve)</a>
+                        </div>
                     </li>
                 </ul>
-                <a href="#" class="btn btn-dark btn-sm">GitHub</a>
+                <a class="btn btn-dark btn-sm" href="https://github.com/firmwares" target="_blank">GitHub</a>
             </div>
         </nav>
 
         <div class="main">
             <img src="/unlock@logo.svg" alt="Unlock FRP">
 
-            <p>Obtenha ferramentas para desbloqueios FRP via <code>bypass</code>. Duvidas? Consulte nossa <a href="http://">documentação</a> ou junte-se a comunidade Firmwares no Discord:</p>
-    
-            <a href=" #" class="btn btn-primary tg-link">Discord <i class="material-icons">launch</i></a>
+            <p>Obtenha ferramentas para desbloqueios FRP via <code>bypass</code>. Duvidas? Consulte nossa <a
+                    href="#docs">documentação</a> ou junte-se a comunidade Firmwares no Telegram:</p>
 
-                <a class="dl-link text-dark" href="#downloads">
-                    <span>Downloads</span>
-                    <i class="material-icons">expand_more</i>
-                </a>
+            <a class="btn btn-primary tg-link" href="https://t.me/firmwares_bot" target="_blank">Telegram <i
+                    class="material-icons">launch</i></a>
+
+            <a class="dl-link text-dark" href="#downloads">
+                <span>Downloads</span>
+                <i class="material-icons">expand_more</i>
+            </a>
         </div>
 
     </header>
 
-    <section id="downloads"  class="container pt-2">
+    <section id="downloads" class="container py-2">
 
         <div class="pannel">
             <ul class="list-group">
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="dl-info">
-                        Account Manager 5
-                        <span class="text-secondary mb-0">Gerente de contas Google Android 5</span>
-                    </div>
-                    <a href="#" class="badge badge-primary badge-pill text-white">Baixar</a>
+                    Gerente Contas Google 5
+                    <i class="material-icons info-dl text-secondary mr-auto" data-toggle="tooltip" data-placement="top"
+                        title="Compatível com android 5.1, em conjunto com FRP Bypass. (.apk)">help_outline</i>
+                    <a class="badge badge-primary badge-pill text-white" href="#">Baixar</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="dl-info">
-                        Account Manager 6
-                        <span class="text-secondary mb-0">Gerente de contas Google Android 6</span>
-                    </div>
-                    <a href="#" class="badge badge-primary badge-pill text-white">Baixar</a>
+                    Gerente Contas Google 6
+                    <i class="material-icons info-dl text-secondary mr-auto" data-toggle="tooltip" data-placement="top"
+                        title="Compatível com android 6, 8, e 9, em conjunto com FRP Bypass. (.apk)">help_outline</i>
+                    <a class="badge badge-primary badge-pill text-white" href="#">Baixar</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="dl-info">
-                        FRP bypass
-                        <span class="text-secondary mb-0">Removedor bypass</span>
-                    </div>
-                    <a href="#" class="badge badge-primary badge-pill text-white">Baixar</a>
+                    FRP Bypass
+                    <i class="material-icons info-dl text-secondary mr-auto" data-toggle="tooltip" data-placement="top"
+                        title="Utilizado em conjunto com Gerentes de Contas Google. (.apk)">help_outline</i>
+                    <a class="badge badge-primary badge-pill text-white" href="#">Baixar</a>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-center">
-                    <div class="dl-info">
-                        Remote FRP
-                        <span class="text-secondary mb-0">Removedor único, Google Play Services</span>
-                    </div>
-                    <a href="#" class="badge badge-primary badge-pill text-white">Baixar</a>
+                    Remote FRP
+                    <i class="material-icons info-dl text-secondary mr-auto" data-toggle="tooltip" data-placement="top"
+                        title="Google play services (MOD). (.apk)">help_outline</i>
+                    <a class="badge badge-primary badge-pill text-white" href="#">Baixar</a>
                 </li>
             </ul>
         </div>
 
     </section>
+
+    <footer class="container text-center pt-4 pb-2">
+        <small>Firmwares © 2019 <a href="https://github.com/firmwares">GitHub</a> - <a
+                href="https://t.me/firmwares_bot">Telegram</a></small>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
@@ -97,6 +108,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+
+    <script>
+        $('.info-dl').tooltip({
+            html: true
+        })
+    </script>
 </body>
 
 </html>

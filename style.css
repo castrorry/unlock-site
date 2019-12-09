@@ -98,7 +98,8 @@ section#downloads div.pannel {
     max-width: 540px;
 }
 
-section#downloads div.pannel ul li div.dl-info {
-    display: flex;
-    flex-direction: column;
+section#downloads div.pannel ul li i {
+    font-size: 1rem;
+    margin-left: .3rem;
+    cursor: pointer;
 }
