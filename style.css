@@ -84,13 +84,14 @@ div.main a.tg-link i {
     margin-left: .4rem;
 }
 
-div.more-link {
+div.main-footer, div.main-footer a {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-div.more-link i {
+div.main-footer a i {
+    margin-top: .5rem;
     font-size: 2rem;
 }
 
